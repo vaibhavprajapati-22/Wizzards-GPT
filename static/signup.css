@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.signup-container{
+    position: absolute;
+    top: 2%;
+    left: 35%;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 32rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.signup-heading {
+    width: 32rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom:0.3rem  ;
+    font-size: 1.5rem;
+}
+#login_options{
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    
+    /* border-bottom: 1.5px solid black; */
+    margin: 0.5rem 6rem;
+}
+.login_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    width: 20rem;
+    height: 3rem;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin: 0.6rem 0rem;
+    border-radius: 2rem;
+}
+.login_links img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 0rem 1rem;
+
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.18rem;
+    font-weight: bold;
+    color: #333;
+}
+#signup-details-container{
+    width: 32rem;
+    height: 23rem;
+    overflow: auto;
+    outline: 3px double #212121 ;
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+}
+.form-group {
+    /* margin: 1rem ; */
+
+    text-align: left;
+}
+.name-row{
+    display: flex;
+    flex-direction: row;
+}
+#first-name,#last-name{
+    height: 1.5rem;
+    width: 14rem;
+    padding: 0.35rem; 
+    margin-bottom: 0.7rem ;
+    margin-left: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+#college,#username,#password,#confirm-password,#collegeId,#phoneNumber,#services-option,#business-name,#address,#emailId {
+    height: 1.5rem;
+    width: 30rem;
+    padding: 0.35rem; 
+    margin-bottom: 0.7rem ;
+    margin-left: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#college::placeholder {
+    color: #999;
+}
+
+#college:focus {
+    border-color: #c0c0c0;
+}
+
+#search-results {
+    list-style: none;
+    padding: 0px;
+    margin-top: -0.7rem;
+    margin-left: 0.4rem;
+    width: 30.5rem;
+    max-height: 8rem;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* position: absolute; */
+    z-index: 1;
+    background-color: #fff;
+    overflow: auto;
+}
+#search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-results li:last-child {
+    border-bottom: none;
+}
+
+#search-results li:hover {
+    background-color:#dcdcdc;
+}
+
+#signup-btn-container{
+    width:30rem ;
+}
+#signup-button {
+    width: 10rem;
+    padding: 10px;
+    margin: 0.3rem 5rem;
+    background-color: #353535;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#signup-button:hover {
+    background-color: #050505;
+}
+#login-page,#error-message{
+    margin-top: 0.2rem;
+}
+::-webkit-scrollbar {
+    width: .2em;
+}
+
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 100vw;
+}
+
+
+.option_heading:hover{
+    cursor: pointer;
+}

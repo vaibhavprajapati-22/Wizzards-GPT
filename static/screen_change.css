@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin: 18px 25px;
+}
+
+#logo img{
+    height: 50px;
+    width: 50px;
+    margin: 2px 2px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Young Serif', serif;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    /* bcoz we have to give padding so display is block */
+    padding: 3px 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    /* uper wale se underline khtm */
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:grey;
+    /* text-decoration:underline; */
+}
+
+#navbar .btn1{
+    font-size: 1.2rem;
+    right: 50px;
+    position: absolute;
+    /* default position static rehta hai so right ya left static me use nhi kr skte */
+    border-radius: 8px;
+    font-family: 'Young Serif', serif;
+    padding: 5px;
+}
+#navbar .btn2{
+    font-size: 1.2rem;
+    right: 145px;
+    position: absolute;
+    /* default position static rehta hai so right ya left static me use nhi kr skte */
+    border-radius: 8px;
+    padding: 5px;
+    font-family: 'Young Serif', serif;
+}
+
+.btn1:hover{
+    color: white;
+    background-color: rgb(63, 62, 62);
+    cursor: pointer;
+}
+.btn2:hover{
+    color: white;
+    background-color: rgb(63, 62, 62);
+    cursor: pointer;
+}
+
+.home-box{
+    display: flex;
+    flex-direction: column;
+    height: 415px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-box h3{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: -80px;
+    font-family: 'Bree Serif', serif;
+}
+.home-box::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    background: url(wizard-gpt.jpg) no-repeat center center/cover;
+    height: 34%;
+    /* background-size: auto 100%; */
+    width: 100%;
+    z-index:-1;
+    opacity: 0.95;
+}
+
+.home-box a h1{
+    margin: 25px;
+    position: relative;
+    top: -80px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    left: -70px;
+}
+
+/* #chat-text{
+    background-color: rgb(215, 173, 227);
+} */
+#chat-text h1{
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+#chat-text{
+    background-color: #a0d5ee;
+}
+#services{
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(215, 173, 227); */
+}
+
+#services .box{
+    margin: 5px;
+}
+
+#service .box h2{
+    display: block;
+    font-family: 'Young Serif', serif;
+    top: 2px;
+}
+#services .box:hover{
+    background-color: #ebcbe6;
+    cursor: pointer;
+}
+
+#services h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+}
+#services h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+}
+
+#services .box{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 2px;
+    padding: 22px;
+    border-radius: 20px;
+    /* align-items:center ; */
+    background-color: lightgrey;
+}
+
+
+/* #services-section .box:hover{
+    box-sizing: border-box;
+    box-shadow: 20px;
+} */
+#services .box p{
+    font-size: 1.2rem;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+}
+
+#services .box img{
+    height: 110px;
+    width: 110px;
+    display: block;
+    margin: auto;
+}
+
+/* .special{
+    background-color: rgb(215, 173, 227); ;
+} */
+.chatintext{
+    text-align: center;
+    margin: 10px;
+}
+
+.chat-container {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+  
+.user-message {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  
+.bot-message {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+  
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+  
+input {
+    height: 50px;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+button {
+    padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: grey;
+}
+  
+#sponsor{
+    height:40%;
+    /* background-color: rgb(215, 173, 227); */
+}
+#sponsor h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Young Serif', serif;
+    margin: 15px;
+}
+
+#sponsor::before{
+    content: "";
+    background: url(footerbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 445px;
+    width: 100%;
+    /* top: 0px;
+    left: 0px; */
+    z-index:-1;
+    opacity: 0.6;
+}
+#sponsors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sponsors .box p{
+    text-align: center;
+    font-family: 'Young Serif', serif;
+}
+#sponsors .box{
+    padding: 45px;
+}
+#sponsors .box img{
+    height:250px;
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+
+footer{
+    background: black;
+    font-family: 'Young Serif', serif;
+    color: white;
+    padding: 9px 20px;
+} 
+
+
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.row{
+    display: flex;
+   flex-direction: row;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.social-links input {
+	width: 150px;
+	height: 32.5px;
+	/* border-radius: 5px; */
+}
+
+.social-links svg {
+	height: 17.5px;
+	/* border-radius: 5px 10px 10px 5px; */
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+.file-upload1{
+    display: none;
+}
+.upload-button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+

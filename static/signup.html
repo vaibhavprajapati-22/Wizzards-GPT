@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+<body>
+    <div class="signup-container">
+    <div class="signup-heading">
+        <h2>Signup</h2>
+    </div>
+    <div id="login_options">
+        <div class="login_links">
+            <div class="option_image">
+                <img src="../static/googlelogo.jpeg" alt="google_logo">
+            </div>
+            
+            <div class="option_heading">
+                <h4>GMAIL ACCOUNT</h4>
+            </div>
+            
+        </div>
+        <!-- <div class="login_links">
+            <div class="option_image">
+                <img src="./logo/idCard_logo.png" alt="google_logo" style="height: 1.5rem; width: 2rem;border-radius: 1.5px;">
+            </div>
+            
+            <div class="option_heading">
+                <h4>COLLEGE ID</h4>
+            </div>
+            
+        </div> -->
+    </div>
+    <div id="signup-details-container">
+        <form id="signup-form">
+            <div class="name-row">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <span class="error" id="first-name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <span class="error" id="last-name-error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="college">College:</label>
+                <!-- <input type="text" id="" required> -->
+                <input type="text" id="college" name="college" placeholder="Search Your Campus..." autocomplete="off" autofocus="off" required>
+                <ul id="search-results"></ul>
+                <span class="error" id="college-error"></span>
+               
+            
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error" id="username-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="collegeId">College Roll:</label>
+                <input type="text" id="collegeId" name="collegeId" required>
+                <span class="error" id="collegeId-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Mobile Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+                <span class="error" id="phoneNumber-error"></span>
+            </div>
+          
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="password-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error" id="confirm-password-error"></span>
+            </div>
+           
+        </form>
+    </div>
+    <div id="signup-btn-container">
+        <button id="signup-button" type="submit">SignUp</button>
+    </div>
+    <p id="error-message" class="error-message"></p>
+    <p id="login-page"> Already have a account, <a href="login.html">login</a></p>
+    </div>
+    <script src="inspect_disable.js"></script>
+    <script src="script_signup.js"></script>
+</body>
+</html>

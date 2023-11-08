@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(11, 11, 49);
+}
+
+#logo{
+    margin: 18px 25px;
+}
+
+#logo img{
+    height: 50px;
+    width: 50px;
+    margin: 2px 2px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Young Serif', serif;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    /* bcoz we have to give padding so display is block */
+    padding: 3px 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    /* uper wale se underline khtm */
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:grey;
+    /* text-decoration:underline; */
+}
+
+
+footer{
+    background: black;
+    font-family: 'Young Serif', serif;
+    color: white;
+    padding: 9px 20px;
+} 
+
+
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.row{
+    display: flex;
+   flex-direction: row;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.social-links input {
+	width: 150px;
+	height: 32.5px;
+	/* border-radius: 5px; */
+}
+
+.social-links svg {
+	height: 17.5px;
+	/* border-radius: 5px 10px 10px 5px; */
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+#homepage{
+    display: flex;
+    flex-direction: row;
+    background-color: #232348;
+    justify-content: center;
+    align-items: center;
+}
+
+#homepage .box{
+    height: 220px;
+    width: 220px;
+    background-color: #bfa0a0;
+    padding: 10px;
+    margin: 75px;
+    border-radius: 15px;
+}
+
+#chat-text h1{
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+#chat-text{
+    background-color: #e3dbdb;
+}
+.chatintext{
+    text-align: center;
+    margin: 10px;
+}
+
+.chat-container {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+  
+.user-message {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  
+.bot-message {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+  
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+  
+input {
+    height: 50px;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+button {
+    padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: grey;
+}
