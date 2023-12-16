@@ -19,9 +19,16 @@ Faster Response Times: Prioritizing faster response times as a key performance i
 The system maintains a chat history for reference, allowing users to revisit previous interactions and information, enhancing their overall experience.
 <br>
 <br>
-Way to download and run this project
+Way to download and run this project–
 <br>
 pip install -r .\requirements.txt
 <br>
 run app.py in your terminal/command prompt
 <br>
+<br>
+Credits–
+<br>
+Aashi Jain (22116001)
+<br>
+Muskan Gupta (
+
