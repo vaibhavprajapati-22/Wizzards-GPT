@@ -3,7 +3,7 @@
 Built at Syntax-Error X
 <br>
 <br>
-**Project Description -**
+Project Description -
 <br>
 This project aims to solve the inefficiency and complexity of extracting information from text-based documents in various formats such as .txt, .doc, and .pdf. These documents often contain valuable information, but finding and understanding that information can be time-consuming and challenging.
 <br>
